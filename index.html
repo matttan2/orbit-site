@@ -584,7 +584,10 @@
   function openTally() {
     if (window.Tally && typeof window.Tally.openPopup === "function") {
       window.Tally.openPopup("lbK7xV", { layout: "modal" });
+      return;
     }
+
+    window.open("https://tally.so/r/lbK7xV", "_blank", "noopener,noreferrer");
   }
 </script>
 </body>
