@@ -399,39 +399,6 @@
     font-weight: 700;
   }
 
-  .why {
-    align-items: center;
-  }
-
-  .why-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.72fr);
-    gap: clamp(42px, 8vw, 118px);
-    align-items: start;
-  }
-
-  .points {
-    display: grid;
-    gap: 26px;
-    padding-top: 12px;
-  }
-
-  .points article {
-    padding-bottom: 26px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .points h3 {
-    margin-bottom: 8px;
-    font-size: 1.02rem;
-    font-weight: 600;
-  }
-
-  .points p {
-    color: var(--muted);
-    font-weight: 300;
-  }
-
   .solution {
     align-items: center;
   }
@@ -453,6 +420,9 @@
   }
 
   .solution-row h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 18px;
     font-size: clamp(1.35rem, 2.4vw, 2rem);
     font-weight: 500;
@@ -491,8 +461,7 @@
       min-height: 100svh;
     }
 
-    .hero-inner,
-    .why-grid {
+    .hero-inner {
       grid-template-columns: 1fr;
     }
 
@@ -592,7 +561,7 @@
       <div class="hero-inner">
         <div>
           <h1><span>Your people,</span><em>kept close.</em></h1>
-          <p class="lead">Come to Orbit to rekindle old connections, protect the relationships you value, and grow your circle. We handle the when, where, and who so you can just be there.</p>
+          <p class="lead">Come to Orbit to rekindle old connections, protect the relationships you value, and grow your circle. We help you handle the when, where, and who so you can just be there.</p>
           <div class="actions">
             <button class="button" type="button" onclick="openTally()">Join the waitlist</button>
           </div>
@@ -626,46 +595,23 @@
       </div>
     </section>
 
-    <section class="why" id="why">
-      <div class="why-grid">
-        <div>
-          <h2>Life moves fast. People matter.</h2>
-          <p class="lead">You want to be there for your people. Orbit takes the logistics spiral off your plate so the good stuff gets more room.</p>
-        </div>
-        <div class="points">
-          <article>
-            <h3>The little stuff matters.</h3>
-            <p>Birthdays, inside jokes, hard weeks, new jobs, favorite places, and half-made plans all add up to better moments.</p>
-          </article>
-          <article>
-            <h3>Show up with a little backup.</h3>
-            <p>A light layer for the tiny timing stuff your brain should not have to juggle alone.</p>
-          </article>
-          <article>
-            <h3>Making the moments that matter count.</h3>
-            <p>Good people, good places, good timing. Orbit keeps the details moving so you can stay present when it counts.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="solution" id="solution">
       <div>
-        <h2>Let Orbit handle the logistics.</h2>
-        <p class="lead">Start with a few people who matter. Orbit keeps plans moving and helps turn "we should" into "see you there."</p>
+        <h2>Let Orbit carry the logistics.</h2>
+        <p class="lead">Start with a few names. Keep plans moving and turn "we should" into "see you there."</p>
 
         <div class="solution-stack">
           <article class="solution-row">
-            <h3>Care</h3>
-            <p>Show the people who mean the most to you that they are on your mind, without needing to keep everything in your head.</p>
+            <h3><span aria-hidden="true">💛</span> Care</h3>
+            <p>Send the small signal that says, yeah, you crossed my mind, without storing every detail upstairs.</p>
           </article>
           <article class="solution-row">
-            <h3>Show Up</h3>
-            <p>Spend less energy sorting out when, where, and who. Be present, be engaged, and actually enjoy the time together.</p>
+            <h3><span aria-hidden="true">📍</span> Show Up</h3>
+            <p>Skip the group-thread math around time, place, and who's coming. Arrive ready to enjoy it.</p>
           </article>
           <article class="solution-row">
-            <h3>Grow</h3>
-            <p>Keep old connections warm, make the most of the relationships you already have, and leave space for new ones to happen.</p>
+            <h3><span aria-hidden="true">🌱</span> Grow</h3>
+            <p>Reopen old doors, deepen what already feels good, and leave room for fresh circles to form.</p>
           </article>
         </div>
 
