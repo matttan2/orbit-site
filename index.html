@@ -600,7 +600,7 @@
               <span class="avatar av3">A</span>
               <span class="avatar av4">L</span>
             </div>
-            <p class="proof-text"><strong><span id="waitlistCount">7</span> people</strong> already along for the ride.</p>
+            <p class="proof-text"><strong>7 people</strong> already along for the ride.</p>
           </div>
         </div>
 
@@ -680,39 +680,6 @@
 
 <script src="https://tally.so/widgets/embed.js"></script>
 <script>
-  const WAITLIST_COUNT_ENDPOINT = window.ORBIT_WAITLIST_COUNT_ENDPOINT || "";
-
-  async function updateWaitlistCount() {
-    if (!WAITLIST_COUNT_ENDPOINT) {
-      return;
-    }
-
-    const countTarget = document.getElementById("waitlistCount");
-    if (!countTarget) {
-      return;
-    }
-
-    try {
-      const response = await fetch(WAITLIST_COUNT_ENDPOINT, {
-        headers: { "Accept": "application/json" },
-        cache: "no-store"
-      });
-
-      if (!response.ok) {
-        return;
-      }
-
-      const data = await response.json();
-      const count = Number(data.count);
-
-      if (Number.isFinite(count) && count >= 0) {
-        countTarget.textContent = Math.round(count).toLocaleString();
-      }
-    } catch {
-      countTarget.textContent = countTarget.textContent;
-    }
-  }
-
   function openTally() {
     if (window.Tally && typeof window.Tally.openPopup === "function") {
       window.Tally.openPopup("lbK7xV", { layout: "modal" });
@@ -721,8 +688,6 @@
 
     window.open("https://tally.so/r/lbK7xV", "_blank", "noopener,noreferrer");
   }
-
-  updateWaitlistCount();
 </script>
 </body>
 </html>
