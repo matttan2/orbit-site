@@ -152,7 +152,7 @@
   .hero {
     position: relative;
     min-height: 92svh;
-    padding-top: 130px;
+    padding-top: 96px;
   }
 
   .hero-bg {
@@ -174,14 +174,14 @@
   }
 
   .ring-1 {
-    width: min(58vw, 560px);
+    width: min(46vw, 440px);
     aspect-ratio: 1;
     border-color: rgba(224, 120, 48, 0.22);
     animation-duration: 38s;
   }
 
   .ring-2 {
-    width: min(74vw, 760px);
+    width: min(62vw, 620px);
     aspect-ratio: 1;
     border-color: rgba(245, 240, 235, 0.075);
     animation-duration: 62s;
@@ -189,7 +189,7 @@
   }
 
   .ring-3 {
-    width: min(90vw, 940px);
+    width: min(76vw, 760px);
     aspect-ratio: 1;
     border-color: rgba(245, 240, 235, 0.045);
     animation-duration: 88s;
@@ -204,21 +204,21 @@
     border-radius: 50%;
     background: var(--orange);
     box-shadow: 0 0 24px rgba(224, 120, 48, 0.55);
-    transform: translate(-50%, -50%) translateY(calc(-1 * min(29vw, 280px)));
+    transform: translate(-50%, -50%) translateY(calc(-1 * min(23vw, 220px)));
   }
 
   .dot-2 {
     width: 5px;
     height: 5px;
     opacity: 0.62;
-    transform: translate(-50%, -50%) rotate(130deg) translateY(calc(-1 * min(29vw, 280px)));
+    transform: translate(-50%, -50%) rotate(130deg) translateY(calc(-1 * min(23vw, 220px)));
   }
 
   .dot-3 {
     width: 5px;
     height: 5px;
     opacity: 0.46;
-    transform: translate(-50%, -50%) rotate(244deg) translateY(calc(-1 * min(29vw, 280px)));
+    transform: translate(-50%, -50%) rotate(244deg) translateY(calc(-1 * min(23vw, 220px)));
   }
 
   @keyframes orbitSpin {
@@ -230,8 +230,8 @@
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 430px);
-    gap: clamp(42px, 8vw, 120px);
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+    gap: clamp(28px, 5vw, 72px);
     align-items: center;
   }
 
@@ -245,7 +245,7 @@
   }
 
   h1 {
-    font-size: clamp(4.8rem, 11vw, 10.4rem);
+    font-size: clamp(4rem, 8vw, 7.2rem);
   }
 
   h1 span,
@@ -270,9 +270,9 @@
 
   .lead {
     max-width: 560px;
-    margin-top: 28px;
+    margin-top: 20px;
     color: var(--muted);
-    font-size: clamp(1.08rem, 1.7vw, 1.3rem);
+    font-size: clamp(1.02rem, 1.55vw, 1.18rem);
     font-weight: 300;
   }
 
@@ -280,7 +280,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 34px;
+    margin-top: 24px;
   }
 
   .button {
@@ -311,9 +311,11 @@
 
   .device {
     position: relative;
-    padding: 12px;
+    justify-self: end;
+    max-width: 340px;
+    padding: 10px;
     border: 1px solid rgba(245, 240, 235, 0.12);
-    border-radius: 34px;
+    border-radius: 30px;
     background: rgba(245, 240, 235, 0.06);
     box-shadow: 0 34px 90px rgba(0, 0, 0, 0.38);
     backdrop-filter: blur(24px);
@@ -322,34 +324,34 @@
   .device-screen {
     overflow: hidden;
     border: 1px solid rgba(245, 240, 235, 0.10);
-    border-radius: 26px;
+    border-radius: 23px;
     background: rgba(17, 17, 17, 0.72);
   }
 
   .device-head {
     display: flex;
     justify-content: space-between;
-    padding: 22px 22px 18px;
+    padding: 18px 18px 14px;
     color: var(--muted);
     font-size: 0.84rem;
     font-weight: 500;
   }
 
   .prompt {
-    padding: 22px;
+    padding: 17px 18px;
     border-top: 1px solid rgba(245, 240, 235, 0.09);
   }
 
   .prompt strong {
     display: block;
     margin-bottom: 7px;
-    font-size: 1rem;
+    font-size: 0.93rem;
     font-weight: 600;
   }
 
   .prompt p {
     color: var(--muted);
-    font-size: 0.94rem;
+    font-size: 0.86rem;
     font-weight: 300;
   }
 
@@ -357,7 +359,7 @@
     display: flex;
     align-items: center;
     gap: 14px;
-    margin-top: 28px;
+    margin-top: 20px;
     color: var(--muted);
     font-size: 0.92rem;
     font-weight: 300;
@@ -495,7 +497,8 @@
     }
 
     .device {
-      max-width: 430px;
+      justify-self: start;
+      max-width: 380px;
     }
 
     .solution-stack {
